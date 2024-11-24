@@ -24,7 +24,7 @@ class AppManager {
     }
 
     #init = async () => {
-        this.#runningConfType = conf.DevConfig;
+        //this.#runningConfType = conf.DevConfig;
         this.#appExpress = express();
     }
 
@@ -57,11 +57,14 @@ class AppManager {
     }
 
     runService = async () => {
-        const thisServicePort = this.#runningConfType.service.port;
+        const thisServicePort = "https://pagina-woad-three.vercel.app/";
         await this.#appExpress.listen(thisServicePort, () => {
             console.log(`AppManager is ready on ${thisServicePort}`);
         });
     }
+    
 }
+        
+
 
 module.exports = AppManager;  
