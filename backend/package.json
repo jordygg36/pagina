@@ -7,7 +7,7 @@
     "dev": "nodemon index.js",
     "start": "node index.js"
   },
-  "author": "Johny",
+  "author": "Jordy",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.3",
