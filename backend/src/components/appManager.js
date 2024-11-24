@@ -64,7 +64,9 @@ class AppManager {
     }
     
 }
-        
+app.use(cors({
+  origin: 'http://localhost:4200' // Permitir solicitudes desde tu origen frontend
+}));       
 
 
 module.exports = AppManager;  
