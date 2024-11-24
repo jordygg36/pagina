@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class OrganismoService {
-  URL = 'http://localhost:3000/api/organismo';
+  URL = 'https://pagina-woad-three.vercel.app/api/organismo';
 
   constructor(private http: HttpClient) {}
 
